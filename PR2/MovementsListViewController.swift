@@ -9,10 +9,15 @@ import UIKit
 
 class MovementsListViewController: UITableViewController {
     // BEGIN-UOC-1
+    
+    var movements: [Movement]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
         tableView.rowHeight = 75
+        
+        movements = Services.getMovements()
     }
     // END-UOC-1
     
