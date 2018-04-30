@@ -94,7 +94,6 @@ class MovementsListViewController: UITableViewController {
         
         tableView.reloadData()
     }
-    
     // END-UOC-5
     
     // BEGIN-UOC-6.1
