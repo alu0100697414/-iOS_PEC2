@@ -68,6 +68,33 @@ class MovementsListViewController: UITableViewController {
     // END-UOC-3
     
     // BEGIN-UOC-5
+    @IBOutlet weak var segmentedFilter: UISegmentedControl!
+    @IBAction func segmentedFilterAction(_ sender: UISegmentedControl) {
+        // All movements
+        if(sender.selectedSegmentIndex == 0){
+            // Set all movements
+            movements = Services.getMovements()
+        }
+        // Get only today movements
+        else if(sender.selectedSegmentIndex == 1){
+            // Get current date
+            let date = Date()
+            
+            // Save only today movements
+            var todayMovements = [Movement]()
+            for movement in movements {
+                if (Calendar.current.compare(movement.date, to: date, toGranularity: .day) == .orderedSame) {
+                    todayMovements.append(movement)
+                }
+            }
+            
+            // Save today movements
+            movements = todayMovements
+        }
+        
+        tableView.reloadData()
+    }
+    
     // END-UOC-5
     
     // BEGIN-UOC-6.1

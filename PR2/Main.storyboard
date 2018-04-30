@@ -196,8 +196,14 @@
                                 <segment title="All"/>
                                 <segment title="Today"/>
                             </segments>
+                            <connections>
+                                <action selector="segmentedFilterAction:" destination="AOg-kE-laP" eventType="valueChanged" id="Ajf-5z-1uw"/>
+                            </connections>
                         </segmentedControl>
                     </navigationItem>
+                    <connections>
+                        <outlet property="segmentedFilter" destination="OsD-Dz-Lj1" id="UX0-Nl-A1Z"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PdI-ln-Mnk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
