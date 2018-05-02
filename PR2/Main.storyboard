@@ -136,7 +136,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5,000.20 €" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISx-Qu-Ipo" userLabel="Amount">
-                                            <rect key="frame" x="193" y="45" width="140" height="21"/>
+                                            <rect key="frame" x="414" y="45" width="140" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="140" id="LSc-aM-lVE"/>
                                             </constraints>
@@ -169,7 +169,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⇜ End of movements ⇝ " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPu-m3-7kY">
-                                            <rect key="frame" x="89" y="11" width="197" height="21"/>
+                                            <rect key="frame" x="201.5" y="11" width="197" height="21"/>
                                             <fontDescription key="fontDescription" name="ArialUnicodeMS" family="Arial Unicode MS" pointSize="18"/>
                                             <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -275,43 +275,43 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bank" translatesAutoresizingMaskIntoConstraints="NO" id="lTG-iq-Jtu">
-                                <rect key="frame" x="67" y="96" width="240" height="93"/>
+                                <rect key="frame" x="67" y="96" width="240" height="92.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="lTG-iq-Jtu" secondAttribute="height" multiplier="15:8" constant="65.625" id="D5c-jm-8eF"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2z-cn-def">
-                                <rect key="frame" x="16" y="248" width="79" height="21"/>
+                                <rect key="frame" x="16" y="247.66666666666663" width="79" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVS-mz-Qzl">
-                                <rect key="frame" x="16" y="332" width="74" height="21"/>
+                                <rect key="frame" x="16" y="331.66666666666669" width="74" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="3jE-F4-u9B">
-                                <rect key="frame" x="16" y="277" width="343" height="30"/>
+                                <rect key="frame" x="16" y="276.66666666666669" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="2kf-W2-tph">
-                                <rect key="frame" x="16" y="361" width="343" height="30"/>
+                                <rect key="frame" x="16" y="360.66666666666669" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEU-NY-got">
-                                <rect key="frame" x="152" y="207" width="71" height="21"/>
+                                <rect key="frame" x="152" y="206.66666666666666" width="71" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zvp-ef-iMb">
-                                <rect key="frame" x="310" y="399" width="49" height="36"/>
+                                <rect key="frame" x="310" y="398.66666666666669" width="49" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
@@ -653,6 +653,13 @@
                             <constraint firstItem="EmV-fd-YqX" firstAttribute="top" secondItem="tIW-iy-cW6" secondAttribute="bottom" constant="20" id="z19-ey-gOL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="amountLabel" destination="tIW-iy-cW6" id="vyD-Sy-wZF"/>
+                        <outlet property="balanceLabel" destination="mfT-5d-M3H" id="66w-Os-QgR"/>
+                        <outlet property="dateLabel" destination="Mud-8P-m4l" id="Kky-aU-N03"/>
+                        <outlet property="descriptionLabel" destination="EmV-fd-YqX" id="5va-Fk-er4"/>
+                        <outlet property="valueDateLabel" destination="R9R-z6-qMm" id="dd3-dS-WVf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mzx-hl-rQ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

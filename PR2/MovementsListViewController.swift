@@ -97,6 +97,13 @@ class MovementsListViewController: UITableViewController {
     // END-UOC-5
     
     // BEGIN-UOC-6.1
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.destination is MovementDetailViewController) {
+            // Set current movement in MovementDetailViewController
+            let object = segue.destination as? MovementDetailViewController
+            object?.movement = movements[(tableView.indexPathForSelectedRow?.row)!]
+        }
+    }
     // END-UOC-6.1
     
     override func viewWillAppear(_ animated: Bool) {
