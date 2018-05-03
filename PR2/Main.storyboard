@@ -118,10 +118,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHG-QC-pHS" userLabel="Description">
-                                            <rect key="frame" x="8" y="8" width="360" height="17"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="360" id="t8y-H6-b93"/>
-                                            </constraints>
+                                            <rect key="frame" x="8" y="8" width="325" height="17"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -136,7 +133,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5,000.20 €" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISx-Qu-Ipo" userLabel="Amount">
-                                            <rect key="frame" x="414" y="45" width="140" height="21"/>
+                                            <rect key="frame" x="193" y="45" width="140" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="140" id="LSc-aM-lVE"/>
                                             </constraints>
@@ -151,6 +148,7 @@
                                         <constraint firstItem="ISx-Qu-Ipo" firstAttribute="top" secondItem="gHG-QC-pHS" secondAttribute="bottom" constant="20" id="WuR-Lq-fzd"/>
                                         <constraint firstItem="CNI-zh-2Lj" firstAttribute="leading" secondItem="HQ2-NA-ViA" secondAttribute="leading" constant="8" id="gb8-6T-F0I"/>
                                         <constraint firstAttribute="trailing" secondItem="ISx-Qu-Ipo" secondAttribute="trailing" constant="8" id="pFR-qh-02z"/>
+                                        <constraint firstAttribute="trailing" secondItem="gHG-QC-pHS" secondAttribute="trailing" constant="8" id="q4d-QO-scu"/>
                                         <constraint firstItem="gHG-QC-pHS" firstAttribute="leading" secondItem="HQ2-NA-ViA" secondAttribute="leading" constant="8" id="vEB-ML-XU6"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -169,7 +167,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⇜ End of movements ⇝ " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPu-m3-7kY">
-                                            <rect key="frame" x="201.5" y="11" width="197" height="21"/>
+                                            <rect key="frame" x="89" y="11" width="197" height="21"/>
                                             <fontDescription key="fontDescription" name="ArialUnicodeMS" family="Arial Unicode MS" pointSize="18"/>
                                             <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
