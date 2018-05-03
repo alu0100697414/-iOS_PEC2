@@ -48,10 +48,78 @@ class MovementDetailViewController: UIViewController {
     }
     
     // BEGIN-UOC-7
-    func rejectAction(sender: UIButton!) {        
+    override func viewWillAppear(_ animated: Bool) {
+        // Set button if movement is false
+        if(movement.rejected == false){
+            // Create button
+            let button = makeButton()
+            view.addSubview(button)
+            
+            // Set constraints to button
+            addContrainsts(component: button)
+        } else {
+            // Set label of the rejected movement
+            let label = makeLabel()
+            view.addSubview(label)
+            
+            // Set constraints to label
+            addContrainsts(component: label)
+        }
+    }
+    
+    @objc func rejectAction(sender: UIButton!) {
         if let navigationController = self.navigationController {
             navigationController.popViewController(animated: true)
         }
+    
+        // Set rejected true
+        movement.rejected = true
+    }
+    
+    func makeButton() -> UIButton {
+        // Create reject button
+        let button = UIButton(type: UIButtonType.system)
+        button.frame = CGRect(x: 0, y: 0, width: 75, height: 25)
+        
+        // Set title
+        button.setTitle("Reject", for: .normal)
+        
+        // Set title color
+        button.setTitleColor(self.view.tintColor, for: .normal)
+        
+        // Set action
+        button.addTarget(self, action: #selector(rejectAction), for: .touchUpInside)
+        
+        return button
+    }
+    
+    func makeLabel() -> UILabel {
+        // Create rejected label
+        let label = UILabel()
+        label.frame = CGRect(x: 0, y: 0, width: 75, height: 25)
+        
+        // Set title
+        label.text = "Rejected"
+        
+        // Set text color
+        label.textColor = UIColor.red
+        
+        return label
+    }
+    
+    func addContrainsts(component: UIView){
+        component.translatesAutoresizingMaskIntoConstraints = false
+        
+        // Top constraint
+        let top = NSLayoutConstraint(item: component, attribute: .topMargin, relatedBy: .equal,
+                                    toItem: balanceLabel, attribute: .bottom, multiplier: 1.0,
+                                    constant: 20)
+        // Center constraint
+        let centered = NSLayoutConstraint(item: component, attribute: .centerX, relatedBy: .equal,
+                                        toItem: view, attribute: .centerX, multiplier: 1.0,
+                                        constant: 0)
+        // Add constraints
+        view.addConstraints([top, centered])
     }
     // END-UOC-7    
 }

@@ -44,6 +44,13 @@ class MovementsListViewController: UITableViewController {
         else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "MovementCell", for: indexPath) as! MovementCell
             
+            // Check if movement is rejected
+            if(movements[indexPath.row].rejected == true){
+                cell.backgroundColor = UIColor.orange.lighter()
+            } else {
+                cell.backgroundColor = UIColor.white
+            }
+            
             // Set description
             cell.descriptionLabel.text = movements[indexPath.row].movementDescription
             
